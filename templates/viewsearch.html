@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List of searched Books</title> 
+    <link rel="stylesheet" href="{{url_for('static',filename='block.css') }}">
+
+</head>  
+
+<body>  
+<div class="container"> 	
+   
+<h3>Book Details</h3>
+<table border=1>  
+    <thead>  
+        <td>ID</td>  
+        <td>Name</td>  
+        <td>Author</td>  
+        <td>Genre</td>
+        <td>Edition</td>  
+        <td>Quantity</td>  
+        <td>Cost</td>    
+    </thead>  
+       
+    {% for row in rows %}  
+       
+        <tr>  
+            <td>{{row[0]}}</td>  
+            <td>{{row[1]}}</td>  
+            <td>{{row[2]}}</td>  
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>  
+            <td>{{row[5]}}</td>  
+            <td>{{row[6]}}</td>   
+        </tr>  
+       
+    {% endfor %}  
+</table> 
+
+<br />  
+   
+<a style = "color:white; text-decoration:none;" href="/index1">Go back to home page</a>
+  </div>
+ <br />
+<br />  
+</body>  
+</html>  

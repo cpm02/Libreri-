@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List of Customer</title>
+<link rel="stylesheet" href="{{url_for('static',filename='block.css') }}">  
+</head>  
+<body>  
+   <div class="container">
+<h3>Customer Details</h3>  
+<table border=1>  
+    <thead>  
+        <td>ID</td>  
+        <td>Name</td>  
+        <td>Email</td>  
+        <td>Contact</td> 
+    </thead>  
+       
+    {% for row in rows %}  
+       
+        <tr>  
+            <td>{{row["cid"]}}</td>  
+            <td>{{row["cname"]}}</td>  
+            <td>{{row["email"]}}</td>  
+            <td>{{row["contact"]}}</td>
+        </tr>  
+       
+    {% endfor %}  
+</table>  
+<br />  
+   
+<a style = "color:white; text-decoration:none;" href="/index1">Go back to home page</a>
+  </div>
+ <br />
+<br />  
+</body>  
+</html>  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List of Customer</title>
+<link rel="stylesheet" href="{{url_for('static',filename='block.css') }}">  
+</head>  
+<body>  
+   <div class="container">
+<h3>Customer Details</h3>  
+<table border=1>  
+    <thead>  
+        <td>Bill id</td>  
+        <td>Cus id</td>  
+        <td>Book id</td>  
+        <td>quantity</td> 
+    </thead>  
+       
+    {% for row in rows %}  
+       
+        <tr>  
+            <td>{{row["Billid"]}}</td>  
+            <td>{{row["cid"]}}</td>  
+            <td>{{row["bookid"]}}</td>  
+            <td>{{row["quantity"]}}</td>
+        </tr>  
+       
+    {% endfor %}  
+</table>  
+<br />  
+   
+<a style = "color:white; text-decoration:none;" href="/index1">Go back to home page</a>
+<br />
+<a style = "color:white; text-decoration:none;" href="/getbill">Get Bill</a>
+  </div>
+ <br />
+<br />  
+</body>  
+</html>  

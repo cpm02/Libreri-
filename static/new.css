@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background:url(mylib.jpeg) no-repeat ; 
+	background-size: cover;
+}
+.login-box{
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 420px;
+	padding:80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.5);
+
+}
+.login-box h1{
+	color:white;
+}
+
+.login-box h2{
+	color:white;
+}
+.login-box h3{
+	color:white;
+}
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px; 
+	padding:8px 0;
+	margin:8px 0;
+	color:white;
+	border-bottom: white 1px solid;
+}
+.textbox input {
+	border:none;
+	outline: none;
+	background:none;
+	color:white;
+	font-size: 18px;
+	width:80%;
+	float: left;
+	margin: 0 10px; 
+}
+::placeholder{
+	color:white;
+	opacity: 50%;
+}
+.btn{
+	width:100%;
+	background: none;
+	border: 2px solid white;
+	color:white; 
+	cursor:pointer;
+	margin:12px 0;
+	padding: 8px 0;
+	font-size: 20px;
+}
+.login-box a{
+	color:white;
+	margin-top:20px;
+}
